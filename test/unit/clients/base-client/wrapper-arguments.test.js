@@ -20,7 +20,7 @@ describe('wrapper: arguments handling', () => {
       it(`should set 'opts.method' to be the verb argument (in uppercase)`, () => {
         expect(methodSpy.called).to.equal(true)
         expect(methodSpy.callCount).to.equal(1)
-        expect(methodSpy.lastCall.args[0]).to.have.property('method').to.equal('GET')
+        expect(methodSpy.lastCall.args[0]).to.have.property('method').to.equal('POST')
       })
     })
 
